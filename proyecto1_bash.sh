@@ -58,7 +58,17 @@ case $opcion in
 		 echo "Proceso iniciado en background"
 	   fi
 	   ;;
+        5)
+           echo "Ingrese el numero de padron: "
+           read numero_padron
 
+           if  grep "^$numero_padron " "$HOME/EPnro1/salida/$FILENAME.txt"
+           then
+                :
+           else 
+                echo "No se ha encontrado el numero de padon"
+          fi
+          ;;
 	6)
 
 	   if [ -f ~/EPNro1/procesado.log ]
