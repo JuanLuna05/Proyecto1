@@ -77,6 +77,9 @@ case $opcion in
 		 echo "El archivo de log no existe"
 	   fi
 	   ;;
+	7)
+	   exit
+	   ;;
 
 esac
 
