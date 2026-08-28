@@ -59,6 +59,19 @@ case $opcion in
 	   fi
 	   ;;
 
+	 5)
+           echo "Ingrese el numero de padron: "
+           read numero_padron
+
+
+           if  grep "^$numero_padron " "$HOME/EPNro1/salida/$FILENAME.txt"
+           then
+                :
+           else 
+                echo "No se ha encontrado el numero de padon"
+          fi
+          ;;
+
 	4)
 	   if [ -f ~/EPNro1/salida/$FILENAME.txt ]
 	   then
@@ -67,6 +80,7 @@ case $opcion in
 		echo "No existe" $FILENAME
 	   fi
 	   ;;
+
 
 	6)
 
@@ -82,4 +96,3 @@ case $opcion in
 	   ;;
 
 esac
-
