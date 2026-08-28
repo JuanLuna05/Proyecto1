@@ -59,6 +59,15 @@ case $opcion in
 	   fi
 	   ;;
 
+	4)
+	   if [ -f ~/EPNro1/salida/$FILENAME.txt ]
+	   then
+		sort -n -r -k5 ~/EPNro1/salida/$FILENAME.txt | head
+	   else
+		echo "No existe" $FILENAME
+	   fi
+	   ;;
+
 	6)
 
 	   if [ -f ~/EPNro1/procesado.log ]
