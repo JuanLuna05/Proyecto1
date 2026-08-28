@@ -58,17 +58,30 @@ case $opcion in
 		 echo "Proceso iniciado en background"
 	   fi
 	   ;;
-        5)
+
+	 5)
            echo "Ingrese el numero de padron: "
            read numero_padron
 
-           if  grep "^$numero_padron " "$HOME/EPnro1/salida/$FILENAME.txt"
+
+           if  grep "^$numero_padron " "$HOME/EPNro1/salida/$FILENAME.txt"
            then
                 :
            else 
                 echo "No se ha encontrado el numero de padon"
           fi
           ;;
+
+	4)
+	   if [ -f ~/EPNro1/salida/$FILENAME.txt ]
+	   then
+		sort -n -r -k5 ~/EPNro1/salida/$FILENAME.txt | head
+	   else
+		echo "No existe" $FILENAME
+	   fi
+	   ;;
+
+
 	6)
 
 	   if [ -f ~/EPNro1/procesado.log ]
@@ -78,6 +91,8 @@ case $opcion in
 		 echo "El archivo de log no existe"
 	   fi
 	   ;;
+	7)
+	   exit
+	   ;;
 
 esac
-
