@@ -19,7 +19,6 @@ then
     echo "Eliminado y procesos finalizados"
     exit
 fi
-
 #
 while [ "$opcion" != "7" ]
 do
