@@ -46,7 +46,7 @@ if [ $opcion -lt 1 ] || [ $opcion -gt 7 ]
 	  	 mkdir -p ~/EPNro1/salida
 	  	 mkdir -p ~/EPNro1/procesado
 
-       	   	cp ~/consolidar.sh ~/EPNro1/consolidar.sh
+       	   	cp ~/Proyecto1/consolidar.sh ~/EPNro1/consolidar.sh
 
 	 	 echo "Entorno Creado Correctamente"
 	 	 ;;
@@ -93,7 +93,7 @@ if [ $opcion -lt 1 ] || [ $opcion -gt 7 ]
 				echo "No se ha encontrado el numero de padron"
 			 fi
 		else
-			echo "Archivo no encontrado"	
+			echo "Archivo no encontrado"
 		 fi
 		 ;;
 
