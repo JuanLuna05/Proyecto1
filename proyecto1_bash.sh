@@ -109,4 +109,4 @@ if [ $opcion -lt 1 ] || [ $opcion -gt 7 ]
 	esac
      fi
 done
-echo "Gracias por visitar nuestro programa"
+echo "Gracias por visitar nuestro programa" 
